@@ -9,23 +9,52 @@
         .overlay-text {
             background-color: rgba(0, 0 ,0, 0.5);
             color: white;
-            padding: 10px;
+            padding: 0px 0 70px 0;
             z-index: 1; /* Ensure text appears above the image */
             top: 0; /* Position at the top */
             left: 0; /* Align with the left edge */
             right: 0; /* Align with the right edge */
             bottom: 0; /* Align with the bottom edge */
         }
+        .curly-brackets {
+            color: purple; /* Set color to purple */
+            font-size: 5rem; /* Adjust size as needed */
+            display: inline-block; /* Ensure it behaves like a block */
+            margin: 0 10px; /* Space between brackets and text */
+        }
         
     </style>
 </head>
 <body>
-    <div class="container-fluid p-0 m-0 position-relative">
-        <img src="coding-vs-programming.jpg" class="w-100 bg-dark" style="height: 85vh; object-fit: cover;" alt="Responsive image" alt="">
-        <div class="position-absolute d-flex flex-column align-items-center justify-content-start w-100 h-100 overlay-text m-20">
-            <h2 class="text-center">Promote your online course like a pro</h2>
-            <h1 class="text-lg">DevCourse</h1>
-            <h2 class="text-center">A Course Landing Page for Developers</h2>
+    <div class="content">
+        <div class="container-fluid p-0 m-0 position-relative">
+            <img src="coding-vs-programming.jpg" class="w-100 bg-dark" style="height: 85vh; object-fit: cover;" alt="Responsive image" alt="">
+            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100 overlay-text m-20">
+                <h4 class="text-sm">Promote your online course like a pro</h4>
+                <div class="d-flex align-items-center">
+                    <span class="curly-brackets">&#123;</span>
+                    <h1 class="display-1">DevCourse</h1>
+                    <span class="curly-brackets">&#125;</span>
+                </div>
+                <h3 class="display-5">A Course Landing Page for Developers</h3>
+                <div class="button-container">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column p-5">
+                        <h6>Content</h6>
+                        <h6>80+ Videos</h6>
+                    </div>
+                    <div class="d-flex flex-column p-5">
+                        <h6>Duration</h6>
+                        <h6>72 Hours</h6>
+                    </div>
+                    <div class="d-flex flex-column p-5">
+                        <h6>Access</h6>
+                        <h6>Lifetime</h6>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
